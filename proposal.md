@@ -2,25 +2,25 @@
 
 ## Grupo
 ### Integrantes
-48952-Franco Natalia Belén
+48952- Franco Natalia Belen
 49082- Abele Federico
 50194 - Zallocco Emilio
 
 
 ### Repositorios
-* [aplicación frontend](https://github.com/EmilioZallocco/frontend-app)
-* [aplicación backend](https://github.com/EmilioZallocco/Backend-app)
+* [frontend app](https://github.com/EmilioZallocco/frontend-app)
+* [backend app](https://github.com/EmilioZallocco/Backend-app)
 
 
 ## Tema
 ### Descripción
-Proponemos elaborar una página para solicitar y reservar turnos médicos en la cual se van a poder registrar todos los doctores que atienden con sus respuestas horarios de consulta y cargar todos los pacientes para así cambiar registradores en el calendario.
+Proponemos elaborar una página para solicitar y reservar turnos médicos en la cual se van a poder registrar todos los doctores que atiendan con sus respectivos horarios de consulta y cargar todos los pacientes para así también registrarlos en el calendario.
 
-### modelo
-![imaginario](https://github.com/EmilioZallocco/tp/assets/129116072/7911be77-19c4-4552-9f42-cc0786e38062)
+### Modelo
+![image](https://github.com/EmilioZallocco/tp/assets/129116072/ddd3138e-5347-4f61-aee6-1d7d2776c0b4)
 
 
-*Nota*: incluir un enlace con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Sirena](https://mermaid.js.org) en lugar de imágenes.
+*Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
 
 ## Alcance Funcional 
 
@@ -31,8 +31,14 @@ Proponemos elaborar una página para solicitar y reservar turnos médicos en la 
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUDO simple|1. CRUD Tipo Paciente<hermano>2. CRUD Medico<hermano>3. CRUD Paciente|
-|CRUD dependiente|1. CRUD ObraSocial{depende de} CRUD Medico<hermano>2. CRUD Horarios {depende de} CRUD Medico |
-|Listado<hermano>+<hermano>detalle| 1. Listado de turnos del médico, mucho nombre médico y turnos <hermano> 2. Listado de reservas filtrado por rango de fecha, mucha nro de turno, fecha inicio, estado y nombre del paciente |
-|CUU/Epic|1.Reservar turno para un determinado médico<hermano>2. Cancelar Turno|
+|CRUD simple|1. CRUD Tipo Paciente<br>2. CRUD Medico<br>3. CRUD Paciente|
+|CRUD dependiente|1. CRUD ObraSocial{depende de} CRUD Medico<br>2. CRUD Horarios {depende de} CRUD Medico |
+|Listado<br>+<br>detalle| 1. Listado de turnos del medico, muestra nombre medico y turnos <br> 2. Listado de reservas filtrado por rango de fecha, muestra nro de turno, fecha inicio, estado y nombre del paciente |
+|CUU/Epic|1.Reservar turno para un determinado medico<br>2. Cancelar Turno|
 
+
+Adicionales para Aprobación
+|Req|Detalle|
+|:-|:-|
+|CRUD |1. CRUD Tipo Paciente<br>2. CRUD tipoConsulta<br>3. CRUD ObraSocial{depende de} CRUD Medico<br>4. CRUD Medico<br>5. CRUD Horarios {depende de} CRUD Medico<br>6. CRUD Turno<br>|
+|CUU/Epic|1.Reservar turno para un determinado medico<br>2. Cancelar Turno<br>3. Consultar horario del turno con mail o dni|
