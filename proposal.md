@@ -2,21 +2,25 @@
 
 ## Grupo
 ### Integrantes
-* legajo - Apellido(s), Nombre(s)
+48952-Franco Natalia Belén
+49082- Abele Federico
+50194 - Zallocco Emilio
+
 
 ### Repositorios
-* [frontend app](http://hyperlinkToGihubOrGitlab)
-* [backend app](http://hyperlinkToGihubOrGitlab)
-*Nota*: si utiliza un monorepo indicar un solo link con fullstack app.
+* [aplicación frontend](https://github.com/EmilioZallocco/frontend-app)
+* [aplicación backend](https://github.com/EmilioZallocco/Backend-app)
+
 
 ## Tema
 ### Descripción
-*2 a 6 líneas describiendo el negocio (menos es más)*
+Proponemos elaborar una página para solicitar y reservar turnos médicos en la cual se van a poder registrar todos los doctores que atienden con sus respuestas horarios de consulta y cargar todos los pacientes para así cambiar registradores en el calendario.
 
-### Modelo
-![imagen del modelo]()
+### modelo
+![imaginario](https://github.com/EmilioZallocco/tp/assets/129116072/7911be77-19c4-4552-9f42-cc0786e38062)
 
-*Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
+
+*Nota*: incluir un enlace con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Sirena](https://mermaid.js.org) en lugar de imágenes.
 
 ## Alcance Funcional 
 
@@ -27,26 +31,8 @@
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad|
-|CRUD dependiente|1. CRUD Habitación {depende de} CRUD Tipo Habitacion<br>2. CRUD Cliente {depende de} CRUD Localidad|
-|Listado<br>+<br>detalle| 1. Listado de habitaciones filtrado por tipo de habitación, muestra nro y tipo de habitación => detalle CRUD Habitacion<br> 2. Listado de reservas filtrado por rango de fecha, muestra nro de habitación, fecha inicio y fin estadía, estado y nombre del cliente => detalle muestra datos completos de la reserva y del cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva|
-
-
-Adicionales para Aprobación
-|Req|Detalle|
-|:-|:-|
-|CRUD |1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad<br>4. CRUD Provincia<br>5. CRUD Habitación<br>6. CRUD Empleado<br>7. CRUD Cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva<br>3. Realizar el check-out y facturación de estadía y servicios|
-
-
-### Alcance Adicional Voluntario
-
-*Nota*: El Alcance Adicional Voluntario es opcional, pero ayuda a que la funcionalidad del sistema esté completa y será considerado en la nota en función de su complejidad y esfuerzo.
-
-|Req|Detalle|
-|:-|:-|
-|Listados |1. Estadía del día filtrado por fecha muestra, cliente, habitaciones y estado <br>2. Reservas filtradas por cliente muestra datos del cliente y de cada reserve fechas, estado cantidad de habitaciones y huespedes|
-|CUU/Epic|1. Consumir servicios<br>2. Cancelación de reserva|
-|Otros|1. Envío de recordatorio de reserva por email|
+|CRUDO simple|1. CRUD Tipo Paciente<hermano>2. CRUD Medico<hermano>3. CRUD Paciente|
+|CRUD dependiente|1. CRUD ObraSocial{depende de} CRUD Medico<hermano>2. CRUD Horarios {depende de} CRUD Medico |
+|Listado<hermano>+<hermano>detalle| 1. Listado de turnos del médico, mucho nombre médico y turnos <hermano> 2. Listado de reservas filtrado por rango de fecha, mucha nro de turno, fecha inicio, estado y nombre del paciente |
+|CUU/Epic|1.Reservar turno para un determinado médico<hermano>2. Cancelar Turno|
 
